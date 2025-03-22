@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="#">A<span>.</span></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+            <button class="contact-btn">Contact Me</button>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-bg-element"></div>
+                <div class="hero-text">
+                    <div class="hero-greeting">
+                        <span class="greeting-tag">&lt;hello world&gt;</span>
+                    </div>
+                    <h1>👨‍💻 I'm <span class="highlight">Akshay</span></h1>
+                    <div class="typing-container">
+                        <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=3000&pause=1000&color=3B82F6&center=true&vCenter=true&random=false&width=600&lines=Full+Stack+Developer;Blockchain+Enthusiast;AI+%26+ML+Explorer;Open+Source+Contributor" alt="Typing SVG">
+                    </div>
+                    <p class="hero-description">Crafting scalable solutions and exploring emerging technologies</p>
+                    <div class="wave">
+                        <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/24524555/238178097-766d336d-b87d-44ba-807c-c51de2bc6b4d.gif" width="28px" alt="👋">
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#projects" class="cta-button primary">View My Work</a>
+                        <a href="#" class="cta-button secondary connect-btn">Connect With Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>🎯 What I'm Up To</h2>
+            <div class="code-block">
+                <pre><code><span class="keyword">const</span> <span class="property">akshay</span> = {
+    <span class="property">currentlyWorking</span>: <span class="string">"Blockchain Solutions"</span>,
+    <span class="property">learning</span>: [<span class="string">"Machine Learning"</span>, <span class="string">"AI Development"</span>, <span class="string">"Web3"</span>],
+    <span class="property">passions</span>: [<span class="string">"Efficient Code"</span>, <span class="string">"Scalable Solutions"</span>, <span class="string">"Open Source"</span>],
+    <span class="property">goals2025</span>: <span class="string">"Contribute to impactful open-source projects"</span>,
+    <span class="property">funFact</span>: <span class="string">"I write code while chatting with my friends "</span>
+};</code></pre>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>🚀 Tech Arsenal</h2>
+            <div class="skill-section">
+                <h3>Languages & Frameworks</h3>
+                <div class="skill-badges">
+                    <span class="badge python">Python</span>
+                    <span class="badge javascript">JavaScript</span>
+                    <span class="badge typescript">TypeScript</span>
+                    <span class="badge react">React</span>
+                    <span class="badge nodejs">Node.js</span>
+                </div>
+            </div>
+            <div class="skill-section">
+                <h3>Tools & Technologies</h3>
+                <div class="skill-badges">
+                    <span class="badge docker">Docker</span>
+                    <span class="badge kubernetes">Kubernetes</span>
+                    <span class="badge aws">AWS</span>
+                    <span class="badge git">Git</span>
+                    <span class="badge vscode">VSCode</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>💼 Featured Projects</h2>
+            <div class="project-cards">
+                <a href="https://github.com/notcaliper/Form-Generate-script" class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-card-overlay">
+                            <span class="project-card-tag">Python</span>
+                            <h3>Google Form Automation</h3>
+                            <p>A powerful script for automating Google Form submissions with randomly generated data</p>
+                            <div class="project-card-cta">
+                                <span>View Project <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                        <img src="https://github-readme-stats.vercel.app/api/pin/?username=notcaliper&repo=Form-Generate-script&theme=tokyonight&hide_border=true" alt="Google Form Automation Project">
+                    </div>
+                </a>
+                <a href="https://github.com/notcaliper/python-parking" class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-card-overlay">
+                            <span class="project-card-tag">Python</span>
+                            <h3>Parking Management System</h3>
+                            <p>Computer vision-based parking system with number plate detection</p>
+                            <div class="project-card-cta">
+                                <span>View Project <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                        <img src="https://github-readme-stats.vercel.app/api/pin/?username=notcaliper&repo=python-parking&theme=tokyonight&hide_border=true" alt="Python Parking Project">
+                    </div>
+                </a>
+                <a href="https://github.com/notcaliper/HandGaze" class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-card-overlay">
+                            <span class="project-card-tag">Computer Vision</span>
+                            <h3>HandGaze</h3>
+                            <p>Gesture recognition technology for intuitive human-computer interaction</p>
+                            <div class="project-card-cta">
+                                <span>View Project <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                        <img src="https://github-readme-stats.vercel.app/api/pin/?username=notcaliper&repo=HandGaze&theme=tokyonight&hide_border=true" alt="HandGaze Project">
+                    </div>
+                </a>
+                <a href="https://github.com/notcaliper/ASEP-AIDS" class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-card-overlay">
+                            <span class="project-card-tag">Healthcare</span>
+                            <h3>ASEP-AIDS</h3>
+                            <p>Innovative technology solution for healthcare challenges</p>
+                            <div class="project-card-cta">
+                                <span>View Project <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                        <img src="https://github-readme-stats.vercel.app/api/pin/?username=notcaliper&repo=ASEP-AIDS&theme=tokyonight&hide_border=true" alt="ASEP-AIDS Project">
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-glow"></div>
+            <p>© 2024 Akshay. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
