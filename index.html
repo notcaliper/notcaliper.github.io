@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay - Creative Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="#" class="logo-text">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-name">Akshay</span>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active" data-text="Home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-text="About">About</a></li>
+                    <li><a href="#skills" class="nav-link" data-text="Skills">Skills</a></li>
+                    <li><a href="#projects" class="nav-link" data-text="Projects">Projects</a></li>
+                </ul>
+            </nav>
+            <button class="contact-btn">
+                <span class="btn-text">Let's Talk</span>
+                <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+            </button>
+            <div class="menu-toggle">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-greeting">
+                        <span class="greeting-tag">Creative Developer</span>
+                        <div class="greeting-decoration"></div>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Crafting Digital</span>
+                        <span class="title-line highlight">Experiences</span>
+                        <span class="title-line">That Matter</span>
+                    </h1>
+                    <div class="hero-description">
+                        <p>Transforming ideas into elegant solutions through code and creativity</p>
+                        <div class="tech-stack">
+                            <span class="tech-item">Full Stack</span>
+                            <span class="tech-item">Blockchain</span>
+                            <span class="tech-item">AI/ML</span>
+                            <span class="tech-item">Web3</span>
+                        </div>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#projects" class="cta-button primary">
+                            <span class="btn-content">
+                                <span class="btn-text">Explore Work</span>
+                                <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                            </span>
+                            <span class="btn-glow"></span>
+                            <div class="btn-particles">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <a href="#contact" class="cta-button secondary">
+                            <span class="btn-content">
+                                <span class="btn-text">Get in Touch</span>
+                                <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                            </span>
+                            <span class="btn-glow"></span>
+                            <div class="btn-particles">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-element"></div>
+                    <div class="floating-elements">
+                        <div class="float-item" data-speed="2"><i class="fab fa-react"></i></div>
+                        <div class="float-item" data-speed="3"><i class="fab fa-python"></i></div>
+                        <div class="float-item" data-speed="4"><i class="fab fa-ethereum"></i></div>
+                        <div class="float-item" data-speed="2.5"><i class="fas fa-brain"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2>Building the Future</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="code-block">
+                        <pre><code><span class="keyword">class</span> <span class="class">Developer</span> {
+    <span class="keyword">constructor</span>() {
+        <span class="this">this</span>.<span class="property">name</span> = <span class="string">"Akshay"</span>;
+        <span class="this">this</span>.<span class="property">role</span> = <span class="string">"Full Stack Developer"</span>;
+        <span class="this">this</span>.<span class="property">passion</span> = <span class="string">"Creating Impactful Solutions"</span>;
+    }
+
+    <span class="method">currentFocus</span>() {
+        <span class="keyword">return</span> {
+            <span class="property">blockchain</span>: <span class="string">"Building Web3 Solutions"</span>,
+            <span class="property">ai</span>: <span class="string">"Exploring ML & AI"</span>,
+            <span class="property">openSource</span>: <span class="string">"Contributing to Community"</span>
+        };
+    }
+}</code></pre>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">8+</span>
+                        <span class="stat-label">Technologies Mastered</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="section-header">
+                <span class="section-tag">Expertise</span>
+                <h2>Tech Arsenal</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="React">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                            <div class="skill-level" data-level="90"></div>
+                        </div>
+                        <div class="skill-item" data-skill="TypeScript">
+                            <i class="fab fa-js"></i>
+                            <span>TypeScript</span>
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+                        <div class="skill-item" data-skill="Next.js">
+                            <i class="fas fa-code"></i>
+                            <span>Next.js</span>
+                            <div class="skill-level" data-level="80"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Node.js">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+                        <div class="skill-item" data-skill="Python">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                            <div class="skill-level" data-level="90"></div>
+                        </div>
+                        <div class="skill-item" data-skill="Docker">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                            <div class="skill-level" data-level="75"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Blockchain</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Solidity">
+                            <i class="fab fa-ethereum"></i>
+                            <span>Solidity</span>
+                            <div class="skill-level" data-level="80"></div>
+                        </div>
+                        <div class="skill-item" data-skill="Web3">
+                            <i class="fas fa-cube"></i>
+                            <span>Web3</span>
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+                        <div class="skill-item" data-skill="Smart Contracts">
+                            <i class="fas fa-file-contract"></i>
+                            <span>Smart Contracts</span>
+                            <div class="skill-level" data-level="75"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2>Featured Projects</h2>
+            </div>
+            <div class="project-grid">
+                <article class="project-card featured">
+                    <div class="project-content">
+                        <div class="project-info">
+                            <span class="project-tag">Featured</span>
+                            <h3>Google Form Automation</h3>
+                            <p>A powerful automation tool for generating and submitting Google Forms with AI-powered data generation.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>AI</span>
+                                <span>Automation</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/notcaliper/Form-Generate-script" class="project-link">
+                                    <span>View Project</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <img src="https://github-readme-stats.vercel.app/api/pin/?username=notcaliper&repo=Form-Generate-script&theme=tokyonight&hide_border=true" alt="Google Form Automation Project">
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <div class="project-info">
+                            <span class="project-tag">Computer Vision</span>
+                            <h3>Parking Management System</h3>
+                            <p>AI-powered parking system with real-time number plate detection and automated management.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>OpenCV</span>
+                                <span>AI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/notcaliper/python-parking" class="project-link">
+                                    <span>View Project</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <img src="https://github-readme-stats.vercel.app/api/pin/?username=notcaliper&repo=python-parking&theme=tokyonight&hide_border=true" alt="Python Parking Project">
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <div class="project-info">
+                            <span class="project-tag">AI/ML</span>
+                            <h3>HandGaze</h3>
+                            <p>Advanced gesture recognition system for intuitive human-computer interaction.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>Computer Vision</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/notcaliper/HandGaze" class="project-link">
+                                    <span>View Project</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <img src="https://github-readme-stats.vercel.app/api/pin/?username=notcaliper&repo=HandGaze&theme=tokyonight&hide_border=true" alt="HandGaze Project">
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 50, density: { enable: true, value_area: 800 } },
+                color: { value: '#3B82F6' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#3B82F6',
+                    opacity: 0.2,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 1.5,
+                    direction: 'none',
+                    random: true,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'grab' },
+                    onclick: { enable: true, mode: 'push' },
+                    resize: true
+                },
+                modes: {
+                    grab: { distance: 140, line_linked: { opacity: 0.5 } },
+                    push: { particles_nb: 4 }
+                }
+            },
+            retina_detect: true
+        });
+
+        const cursor = document.querySelector('.cursor');
+        const cursorFollower = document.querySelector('.cursor-follower');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            
+            setTimeout(() => {
+                cursorFollower.style.left = e.clientX + 'px';
+                cursorFollower.style.top = e.clientY + 'px';
+            }, 100);
+        });
+
+        const interactiveElements = document.querySelectorAll('a, button, .project-card, .skill-item');
+        interactiveElements.forEach(element => {
+            element.addEventListener('mouseenter', () => {
+                cursor.classList.add('active');
+                cursorFollower.classList.add('active');
+            });
+            element.addEventListener('mouseleave', () => {
+                cursor.classList.remove('active');
+                cursorFollower.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html> 
