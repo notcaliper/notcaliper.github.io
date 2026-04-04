@@ -1,37 +1,38 @@
 :root {
     /* Color System */
-    --primary: #3B82F6;
-    --primary-dark: #2563EB;
-    --primary-light: #60A5FA;
-    --accent: #8B5CF6;
-    --accent-dark: #7C3AED;
-    --accent-light: #A78BFA;
+    --primary: #00F0FF;
+    --primary-dark: #00A3FF;
+    --primary-light: #70FFFF;
+    --accent: #FF00E5;
+    --accent-dark: #B300A0;
+    --accent-light: #FF66ED;
+    --highlight: #7000FF;
     
     /* Neutral Colors */
-    --bg-dark: #0F172A;
-    --bg-darker: #020617;
-    --bg-light: #1E293B;
+    --bg-dark: #070709;
+    --bg-darker: #030305;
+    --bg-light: #121217;
     --text-light: #F8FAFC;
-    --text-dark: #94A3B8;
+    --text-dark: #A1A1B5;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, #3B82F6, #8B5CF6, #EC4899);
-    --gradient-accent: linear-gradient(135deg, #8B5CF6, #EC4899, #3B82F6);
-    --gradient-dark: linear-gradient(135deg, #0F172A, #1E1B4B, #0F172A);
-    --gradient-glow: radial-gradient(circle at center, rgba(59, 130, 246, 0.15), transparent 70%);
+    --gradient-primary: linear-gradient(135deg, var(--primary), var(--highlight), var(--accent));
+    --gradient-accent: linear-gradient(135deg, var(--accent), var(--highlight), var(--primary));
+    --gradient-dark: linear-gradient(135deg, #070709, #120A2B, #070709);
+    --gradient-glow: radial-gradient(circle at center, rgba(0, 240, 255, 0.15), transparent 70%);
     
     /* Glass Effect */
-    --glass-bg: rgba(30, 41, 59, 0.7);
-    --glass-border: rgba(255, 255, 255, 0.1);
-    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    --glass-blur: blur(12px);
+    --glass-bg: rgba(18, 18, 23, 0.5);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    --glass-blur: blur(16px);
     
     /* Shadows */
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
-    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
-    --shadow-glow: 0 0 20px rgba(59, 130, 246, 0.3);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.3);
+    --shadow-glow: 0 0 25px rgba(0, 240, 255, 0.4);
     --shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.2);
     
     /* Transitions */
@@ -82,7 +83,7 @@ body {
 .cursor-follower {
     width: 40px;
     height: 40px;
-    background: rgba(59, 130, 246, 0.1);
+    background: rgba(0, 240, 255, 0.1);
     border: 1px solid var(--primary);
     border-radius: 50%;
     position: fixed;
@@ -94,7 +95,7 @@ body {
 .cursor.active,
 .cursor-follower.active {
     transform: scale(1.5);
-    background: rgba(59, 130, 246, 0.2);
+    background: rgba(0, 240, 255, 0.25);
 }
 
 /* Typography */
@@ -139,7 +140,7 @@ section {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(15, 23, 42, 0.8);
+    background: rgba(7, 7, 9, 0.85);
     backdrop-filter: var(--glass-blur);
     -webkit-backdrop-filter: var(--glass-blur);
     border-bottom: 1px solid var(--glass-border);

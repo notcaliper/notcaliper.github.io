@@ -1,12 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
-    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+    gsap.registerPlugin(ScrollTrigger);
 
-    const smoother = ScrollSmoother.create({
-        wrapper: "#smooth-wrapper",
-        content: "#smooth-content",
-        smooth: 1.5,
-        effects: true,
+    // Initialize Lenis
+    const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        direction: 'vertical',
+        gestureDirection: 'vertical',
+        smooth: true,
+        mouseMultiplier: 1,
+        smoothTouch: false,
+        touchMultiplier: 2,
+        infinite: false,
     });
+
+    lenis.on('scroll', ScrollTrigger.update);
+
+    gsap.ticker.add((time)=>{
+      lenis.raf(time * 1000);
+    });
+
+    gsap.ticker.lagSmoothing(0, 0);
 
     const createLoader = () => {
         const loader = document.createElement('div');
@@ -59,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             .logo-circle {
                 fill: none;
-                stroke: var(--primary-color);
+                stroke: var(--primary);
                 stroke-width: 2;
                 stroke-dasharray: 283;
                 stroke-dashoffset: 283;
@@ -68,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             .logo-text {
                 font-size: 40px;
-                fill: var(--primary-color);
+                fill: var(--primary);
                 text-anchor: middle;
                 font-family: 'Space Grotesk', sans-serif;
                 font-weight: bold;
@@ -245,7 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
                 const target = link.getAttribute('href');
-                smoother.scrollTo(target, true, 'center center');
+                lenis.scrollTo(target);
         });
     });
     
